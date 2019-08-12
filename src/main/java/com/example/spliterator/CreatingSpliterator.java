@@ -17,7 +17,7 @@ public class CreatingSpliterator {
 
     public static void main(String[] args) {
 
-        Path path = Paths.get("D:\\Spallya\\Bit Bucket\\streamscollectorsoptionals\\src\\main\\resources\\files\\people.txt");
+        Path path = Paths.get("D:\\Spallya\\Bit Bucket\\streams-collectors-optionals\\src\\main\\resources\\files\\people.txt");
 
         try (Stream<String> lines = Files.lines(path)) {
             Spliterator<String> lineSpliterator = lines.spliterator();
